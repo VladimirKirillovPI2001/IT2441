@@ -8,21 +8,21 @@
 
 ## Данные
 
-- **Источник:** [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
-- Структура: папки по классам (например `Potato___Late_blight`, `Tomato___healthy` и т.д.), внутри — изображения листьев.
+**Источник:** [PlantVillage Dataset (Kaggle)](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
+Структура: папки по классам (например `Potato___Late_blight`, `Tomato___healthy` и т.д.), внутри — изображения листьев.
 
 ## Архитектура модели
 
-- **Модель:** EfficientNet-B0 (timm), предобученная на ImageNet.
-- **Обоснование:** хороший компромисс точность/скорость, подходит для изображений среднего разрешения.
+**Модель:** EfficientNet-B0 (timm), предобученная на ImageNet.
+**Обоснование:** хороший компромисс точность/скорость, подходит для изображений среднего разрешения.
 
 В `src/config.py` можно сменить на `resnet18` или другую модель из timm.
 
 ## Метрики качества
 
-- Accuracy (доля верных ответов)
-- F1 (macro и weighted)
-- Confusion matrix (визуализация в `results/confusion_matrix.png`)
+ Accuracy (доля верных ответов)
+ F1 (macro и weighted)
+ Confusion matrix (визуализация в `results/confusion_matrix.png`)
 
 ## Результаты
 
@@ -41,9 +41,9 @@ pip install -r requirements.txt
 
 ### 2. Данные
 
-- Скачайте [PlantVillage](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) с Kaggle (нужен аккаунт).
-- Распакуйте так, чтобы в `data/raw/` была папка с подпапками-классами (имена вида `Plant___Disease`).  
-  Пример: `data/raw/PlantVillage/Potato___Late_blight/img1.jpg`, …
+Скачайте [PlantVillage](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) с Kaggle (нужен аккаунт).
+Распакуйте так, чтобы в `data/raw/` была папка с подпапками-классами (имена вида `Plant___Disease`).  
+Пример: `data/raw/PlantVillage/Potato___Late_blight/img1.jpg`, …
 
 Либо из корня проекта (при настроенном Kaggle API):
 
