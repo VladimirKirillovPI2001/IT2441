@@ -98,6 +98,7 @@ python -m src.evaluate
 project1-plant-classification/
 ├── README.md
 ├── requirements.txt
+├── results/          # метрики и confusion matrix
 ├── run.py              # точка входа (train / evaluate)
 ├── build_exe.spec      # PyInstaller
 ├── build_exe.ps1       # скрипт сборки exe
@@ -105,7 +106,6 @@ project1-plant-classification/
 │   └── raw/          # сюда положить PlantVillage
 ├── models/           # best.pt после обучения
 ├── reports/          # history.pt
-├── results/          # метрики и confusion matrix
 ├── notebooks/
 │   └── 01_explore_and_train.ipynb
 └── src/
