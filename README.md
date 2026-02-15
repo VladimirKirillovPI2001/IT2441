@@ -87,8 +87,8 @@ python -m src.evaluate
 4. На GitHub: Releases → нужный релиз → Edit → в разделе *Assets* нажмите *Attach binaries* и загрузите zip (или добавьте новый релиз и прикрепите zip).
 
 **Запуск exe:** положите папку `data/raw/` с датасетом (подпапки-классы с картинками) рядом с exe. В консоли:
-- `PlantClassification.exe train` — обучение
-- `PlantClassification.exe evaluate` — оценка модели
+`PlantClassification.exe train` — обучение
+`PlantClassification.exe evaluate` — оценка модели
 
 ---
 
@@ -120,7 +120,7 @@ project1-plant-classification/
 
 ## Литература / источники
 
-- PlantVillage Dataset: [Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
-- timm: [PyTorch Image Models](https://github.com/huggingface/pytorch-image-models)
+PlantVillage Dataset: [Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
+timm: [PyTorch Image Models](https://github.com/huggingface/pytorch-image-models)
 
 
