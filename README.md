@@ -73,12 +73,34 @@ python -m src.evaluate
 
 В папке `notebooks/` лежит ноутбук `01_explore_and_train.ipynb` для разведки данных и короткого цикла обучения.
 
+## Релиз с exe (исполняемый файл)
+
+1. **Сборка:** установите зависимости, затем выполните:
+   ```powershell
+   .\venv\Scripts\activate
+   pip install pyinstaller
+   pyinstaller build_exe.spec --noconfirm --clean
+   ```
+   Или запустите скрипт: `.\build_exe.ps1`
+2. В папке `dist/PlantClassification/` появятся `PlantClassification.exe` и необходимые библиотеки.
+3. Заархивируйте папку `PlantClassification` в zip.
+4. На GitHub: Releases → нужный релиз → Edit → в разделе *Assets* нажмите *Attach binaries* и загрузите zip (или добавьте новый релиз и прикрепите zip).
+
+**Запуск exe:** положите папку `data/raw/` с датасетом (подпапки-классы с картинками) рядом с exe. В консоли:
+- `PlantClassification.exe train` — обучение
+- `PlantClassification.exe evaluate` — оценка модели
+
+---
+
 ## Структура репозитория
 
 ```
 project1-plant-classification/
 ├── README.md
 ├── requirements.txt
+├── run.py              # точка входа (train / evaluate)
+├── build_exe.spec      # PyInstaller
+├── build_exe.ps1       # скрипт сборки exe
 ├── data/
 │   └── raw/          # сюда положить PlantVillage
 ├── models/           # best.pt после обучения

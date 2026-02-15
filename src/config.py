@@ -1,8 +1,12 @@
 """Configuration for plant classification project."""
+import sys
 from pathlib import Path
 
-# Paths
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# Paths: при запуске из exe (PyInstaller) — папка с exe
+if getattr(sys, "frozen", False):
+    PROJECT_ROOT = Path(sys.executable).parent
+else:
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
