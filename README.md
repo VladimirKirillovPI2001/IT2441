@@ -121,7 +121,6 @@ project1-plant-classification/
 ## Литература / источники
 
 - PlantVillage Dataset: [Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
-- EfficientNet: Tan, M. & Le, Q. V. "EfficientNet: Rethinking Model Scaling for CNNs", ICML 2019.
 - timm: [PyTorch Image Models](https://github.com/huggingface/pytorch-image-models)
 
 
