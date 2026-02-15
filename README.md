@@ -124,6 +124,4 @@ project1-plant-classification/
 - EfficientNet: Tan, M. & Le, Q. V. "EfficientNet: Rethinking Model Scaling for CNNs", ICML 2019.
 - timm: [PyTorch Image Models](https://github.com/huggingface/pytorch-image-models)
 
-## Лицензия
 
-MIT.
