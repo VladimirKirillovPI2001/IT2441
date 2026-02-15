@@ -121,6 +121,7 @@ project1-plant-classification/
 ## Литература / источники
 
 PlantVillage Dataset: [Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
+
 timm: [PyTorch Image Models](https://github.com/huggingface/pytorch-image-models)
 
 
